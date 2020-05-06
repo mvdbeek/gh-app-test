@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     name: Test
-    # if: github.actor == 'gx-workflow-app'
+    if: github.actor == 'gx-workflow-app[bot]'
     runs-on: ubuntu-18.04
     strategy:
       matrix:
