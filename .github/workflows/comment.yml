@@ -1,14 +1,14 @@
-name: Mulled Unit Tests
+name: App test
 on:
   issue_comment:
     types: [created]
 jobs:
   test:
     name: Test
-    if: github.event.user == gx-workflow-app
+    if: github.actor == 'gx-workflow-app'
     runs-on: ubuntu-18.04
     strategy:
       matrix:
         python-version: [3.7]
     steps:
-      run: echo hi
+    - run: echo hi
