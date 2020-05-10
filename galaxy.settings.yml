@@ -2,4 +2,6 @@ accounts:
   - username: mvdbeek
     server: https://usegalaxy.org
   - username: mvdbeek
-    server: https://usegalaxy.org
+    server: https://usegalaxy.org 
+  - username: mvdbeek
+    server: http://localhost:8080
